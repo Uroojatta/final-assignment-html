@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="grey">
+    <center>
+        <fieldset><legend>Order</legend>
+            <form action="/submit_order" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        <br>
+        <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+                <label for="product">Product:</label>
+                <select id="product" name="product" required>
+                    <option value="Atomic Habits">Atomic Habits</option>
+                    <option value="Human Behaviour">Human Behaviour</option>
+                    <option value="Human Psychology">Human Psychology</option>
+                    <option value="Thick and grow rich">Thick and grow rich</option>
+                    <option value="Quite">Quite</option>
+                    <option value="From temperment to character">From temperment to character</option>
+                    <option value="Spirit controlled temperment">Spirit controlled temperment</option>
+                </select>
+        <br>
+        <br>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+        <br>
+        <br>
+                <button type="submit">Place Order</button>
+            </form>
+        </fieldset>
+        </center>
+</body>
+</html>
